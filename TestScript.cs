@@ -30,10 +30,9 @@ namespace GameTVAutomation
                 gamedetail.GameUrl = element.GetAttribute("href");
                 gameList.Add(gamedetail);
             }
-            
+            var count = 1;
             foreach (var data in gameList)
-            {
-                var count = 1;
+            {               
                 webDriver.Navigate().GoToUrl(data.GameUrl);
                 data.Id = count;
                 var name = webDriver.FindElement(By.TagName("h1")).Text;
