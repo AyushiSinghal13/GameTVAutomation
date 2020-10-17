@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\GameDetails.cs" />
+    <Compile Include="LazyLoading.cs" />
     <Compile Include="TestScript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
